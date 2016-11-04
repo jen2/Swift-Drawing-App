@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4BBD30601DCBB9A9008EDEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD305F1DCBB9A9008EDEF4 /* AppDelegate.swift */; };
-		4BBD30621DCBB9A9008EDEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD30611DCBB9A9008EDEF4 /* ViewController.swift */; };
 		4BBD30651DCBB9A9008EDEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD30631DCBB9A9008EDEF4 /* Main.storyboard */; };
 		4BBD30671DCBB9A9008EDEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD30661DCBB9A9008EDEF4 /* Assets.xcassets */; };
 		4BBD306A1DCBB9A9008EDEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD30681DCBB9A9008EDEF4 /* LaunchScreen.storyboard */; };
 		4BBD30751DCBB9A9008EDEF4 /* FreehandDrawingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD30741DCBB9A9008EDEF4 /* FreehandDrawingAppTests.swift */; };
 		4BBD30801DCBB9A9008EDEF4 /* FreehandDrawingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD307F1DCBB9A9008EDEF4 /* FreehandDrawingAppUITests.swift */; };
+		4BBD30941DCBD6F2008EDEF4 /* DrawingAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD30931DCBD6F2008EDEF4 /* DrawingAreaView.swift */; };
+		4BBD30961DCBD720008EDEF4 /* MainDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD30951DCBD720008EDEF4 /* MainDrawingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		4BBD305C1DCBB9A9008EDEF4 /* FreehandDrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreehandDrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBD305F1DCBB9A9008EDEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BBD30611DCBB9A9008EDEF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BBD30641DCBB9A9008EDEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BBD30661DCBB9A9008EDEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BBD30691DCBB9A9008EDEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		4BBD307B1DCBB9A9008EDEF4 /* FreehandDrawingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreehandDrawingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBD307F1DCBB9A9008EDEF4 /* FreehandDrawingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreehandDrawingAppUITests.swift; sourceTree = "<group>"; };
 		4BBD30811DCBB9A9008EDEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBD30931DCBD6F2008EDEF4 /* DrawingAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingAreaView.swift; sourceTree = "<group>"; };
+		4BBD30951DCBD720008EDEF4 /* MainDrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDrawingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				4BBD305F1DCBB9A9008EDEF4 /* AppDelegate.swift */,
-				4BBD30611DCBB9A9008EDEF4 /* ViewController.swift */,
+				4BBD30951DCBD720008EDEF4 /* MainDrawingViewController.swift */,
+				4BBD30931DCBD6F2008EDEF4 /* DrawingAreaView.swift */,
 				4BBD30631DCBB9A9008EDEF4 /* Main.storyboard */,
 				4BBD30661DCBB9A9008EDEF4 /* Assets.xcassets */,
 				4BBD30681DCBB9A9008EDEF4 /* LaunchScreen.storyboard */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BBD30621DCBB9A9008EDEF4 /* ViewController.swift in Sources */,
+				4BBD30941DCBD6F2008EDEF4 /* DrawingAreaView.swift in Sources */,
 				4BBD30601DCBB9A9008EDEF4 /* AppDelegate.swift in Sources */,
+				4BBD30961DCBD720008EDEF4 /* MainDrawingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
